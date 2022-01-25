@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+  <ul class="navbar navbar-nav">
+    <li>
+      <button (click)="onGetAllProducts()" class="btn btn-outline-info ms-2">All</button>
+    </li>
+    <li>
+      <button class="btn btn-outline-info ms-2">Selected</button>
+    </li>
+    <li>
+      <button class="btn btn-outline-info ms-2">Available</button>
+    </li>
+  </ul>
+</nav>
+<ng-container *ngIf="products$ | async as result" | [ngSwitch]="result.dataState">
+  <ng-container *ngSwitchCase="DataStateEnum.LOADING">
+    Loading ....
+  </ng-container>
+  <ng-container *ngSwitchCase="DataStateEnum.LOADED">
+    <table class="table" *ngIf="products$ " >
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Selected</th>
+        <th>Available</th>
+      </tr>
+      <tr *ngFor="let p of result.data">
+        <td>{{p.id}}</td>
+        <td>{{p.name}}</td>
+        <td>{{p.price}}</td>
+        <td>{{p.quantity}}</td>
+        <td>{{p.selected}}</td>
+        <td>{{p.available}}</td>
+      </tr>
+    </table>
+  </ng-container>
+  <ng-container *ngSwitchCase="DataStateEnum.LOADING">
+    <div class="alert-danger">
+      {{result.errorMessage}}
+    </div>
+  </ng-container>
+</ng-container>
+
