@@ -1,12 +1,12 @@
 {
-  "products":[
+  "products": [
     {
-       "id": 1,
+      "id": 1,
       "name": "Computer",
-      "price": 4300,
-      "quantity": 600,
+      "price": 3600,
+      "quantity": 1300,
       "selected": true,
-      "available":true
+      "available": true
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "price": 300,
       "quantity": 100,
       "selected": true,
-      "available":true
+      "available": true
     },
     {
       "id": 3,
@@ -22,7 +22,23 @@
       "price": 1300,
       "quantity": 500,
       "selected": false,
-      "available":true
+      "available": true
+    },
+    {
+      "name": "Télévision",
+      "price": "5600",
+      "quantity": "300",
+      "available": true,
+      "selected": true,
+      "id": 4
+    },
+    {
+      "name": "",
+      "price": 0,
+      "quantity": 0,
+      "available": true,
+      "selected": true,
+      "id": 5
     }
   ]
 }
