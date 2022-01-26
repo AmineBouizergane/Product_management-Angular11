@@ -4,16 +4,16 @@
       "id": 1,
       "name": "Computer",
       "price": 3600,
-      "quantity": 1300,
-      "selected": true,
-      "available": true
+      "quantity": "4400",
+      "available": true,
+      "selected": false
     },
     {
       "id": 2,
       "name": "Printer",
       "price": 300,
       "quantity": 100,
-      "selected": true,
+      "selected": false,
       "available": true
     },
     {
@@ -21,7 +21,7 @@
       "name": "Smart-phone",
       "price": 1300,
       "quantity": 500,
-      "selected": false,
+      "selected": true,
       "available": true
     },
     {
@@ -29,13 +29,13 @@
       "price": "5600",
       "quantity": "300",
       "available": true,
-      "selected": true,
+      "selected": false,
       "id": 4
     },
     {
-      "name": "",
-      "price": 0,
-      "quantity": 0,
+      "name": "Télécommande",
+      "price": "40",
+      "quantity": "350",
       "available": true,
       "selected": true,
       "id": 5

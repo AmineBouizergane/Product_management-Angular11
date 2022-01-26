@@ -6,7 +6,7 @@
         <input type="text" class="form-control" formControlName="name"
         [ngClass]="{'is-invalid':submited && productFormGroup.controls.name.errors}">
         <div *ngIf="submited && productFormGroup.controls.name.errors" class="invalid-feedback">
-          <div *ngIf="productFormGroup.controls.name.errors.required">Name is required</div>
+          <div *ngIf="productFormGroup.controls.name.errors.required"></div>
         </div>
       </div>
       <div class="mb-3">

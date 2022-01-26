@@ -38,11 +38,21 @@ export class ProductsService{
 
   save(p: Product):Observable<Product> {
     const host = environment.host;
-    return this.http.post<Product>(host + '/products/',p);
+    return this.http.post<Product>(host + '/products',p);
+  }
+
+  update(p: Product) {
+    const host = environment.host;
+    return this.http.put<Product>(host + '/products/'+p.id,p);
   }
 
   delete(p: Product) {
     const host = environment.host;
     return this.http.delete<Product>(host + '/products/'+p.id);
+  }
+
+  getProduct(id:number): Observable<Product>{
+    const host = environment.host;
+    return this.http.get<Product>(host + '/products/'+id);
   }
 }
