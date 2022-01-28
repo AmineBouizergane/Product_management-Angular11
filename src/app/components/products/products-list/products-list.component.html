@@ -12,14 +12,13 @@
             <th>Name</th>
             <th>Price</th>
             <th>Quantity</th>
-            <th>Selected</th>
-            <th>Available</th>
+            <th class="text-center">Selected</th>
+            <th class="text-center">Available</th>
             <th></th>
             <th></th>
           </tr>
           <app-products-item
             [product]="p"
-            (productEventEmitter)="onActionEvent($event)"
             *ngFor="let p of result.data"
             style="display: contents">
 

@@ -13,7 +13,7 @@
       "name": "Printer",
       "price": 300,
       "quantity": 100,
-      "selected": false,
+      "selected": true,
       "available": true
     },
     {
@@ -21,14 +21,14 @@
       "name": "Smart-phone",
       "price": 1300,
       "quantity": 500,
-      "selected": true,
+      "selected": false,
       "available": true
     },
     {
       "name": "Télévision",
       "price": "5600",
       "quantity": "300",
-      "available": true,
+      "available": false,
       "selected": false,
       "id": 4
     }
