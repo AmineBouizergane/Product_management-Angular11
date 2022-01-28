@@ -31,14 +31,6 @@
       "available": true,
       "selected": false,
       "id": 4
-    },
-    {
-      "name": "Télécommande",
-      "price": "40",
-      "quantity": "350",
-      "available": true,
-      "selected": true,
-      "id": 5
     }
   ]
 }
